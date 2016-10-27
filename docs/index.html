@@ -9,8 +9,8 @@
 	<meta charset="UTF-8">
 	<title>A &amp; M</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-
-	<link href="//fonts.googleapis.com/css?family=Great+Vibes|Lato:300,400|Pompiere&amp;subset=latin-ext" rel="stylesheet">
+ 
+	<link href="https://fonts.googleapis.com/css?family=Great+Vibes|Lato:300,400|Pompiere&amp;subset=latin-ext" rel="stylesheet">
 	
 	<link rel="stylesheet" href="css/styles.min.css">
 
@@ -109,9 +109,18 @@
 </svg>
 
 	<div class="resize-el-wrapp">
-		<img class="resize-el" src="images/am-bg-small.jpg" sizes ="100vw"
-		srcset="images/am-bg-medium.jpg 1024w, images/am-bg-large.jpg 1920w"
-		>
+		<picture class="resize-el">
+			<img
+			sizes="(max-width: 2000px) 100vw, 2000px"
+			srcset="
+			am-bg_rlvoen_c_scale,w_300.jpg 300w,
+			am-bg_rlvoen_c_scale,w_920.jpg 920w,
+			am-bg_rlvoen_c_scale,w_1339.jpg 1339w,
+			am-bg_rlvoen_c_scale,w_1704.jpg 1704w,
+			am-bg_rlvoen_c_scale,w_2000.jpg 2000w"
+			src="am-bg_rlvoen_c_scale,w_2000.jpg"
+			alt="Alicja i Michal">
+			</picture>
 	</div>
 	<div class="box">
 		<h1 class="box-title">SAVE <span>the </span>DATE</h1>
